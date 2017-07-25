@@ -42,7 +42,8 @@ passport.deserializeUser(function(user, done) {
 
 var mongoose = require('mongoose');
 var app = express();
-mongoose.connect('mongodb://localhost/usersDB');
+//mongoose.connect('mongodb://localhost/usersDB'); 
+mongoose.connect('mongodb://seal:MSP13dag@ds137207.mlab.com:37207/usersdb');
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
